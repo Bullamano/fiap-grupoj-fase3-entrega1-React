@@ -1,4 +1,6 @@
+/* Grid externa contendo todos os Cards */
 .Custom-grid {
     text-align: center;
     justify-content: center;
+    margin-bottom: 15px;
 }
