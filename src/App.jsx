@@ -1,5 +1,6 @@
 import Home from './Screens/Home/Home';
-import Header from './Components/Header/Header';
+import Header from './Components/Header/Header'; 
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 /**
@@ -9,10 +10,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <div className='Contents'>
-        <Home/>
+        <Home />
       </div>
+      <Footer className='Site-footer' />
     </div>
   );
 }

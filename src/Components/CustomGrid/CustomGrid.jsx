@@ -8,15 +8,15 @@ import './CustomGrid.css';
  * que preenchem a tela com os procedimentos
  * @param {object} cards Objeto contendo as propriedades:
  * - 'title' (string com o título do procedimento)
- * - 'steps' (passo-a-passo)
+ * - 'imageUrl' (URL da imagem do procedimento)
  * @returns Grid de CustomCard com informações de procedimentos
  */
 const CustomGrid = ({ cards }) => {
     return (
         <Grid className='Custom-grid' container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            {cards.map(card =>
-                <Grid classname='Custom-item' item>
-                    <CustomCard title={card.title} steps={card.steps} />
+            {cards.map((card, index) =>
+                <Grid className='Custom-item' key={'Grid' + index} item>
+                    <CustomCard key={'Card' + index} title={card.title} imageUrl={card.imageUrl} />
                 </Grid>
             )}
         </Grid>
