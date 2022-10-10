@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import lightbulbImage from '../../Assets/lightbulb-512.png'
 import './GreeterArea.css';
 
 /**
@@ -9,13 +10,17 @@ import './GreeterArea.css';
 const GreeterArea = () => {
     return (
         <Box className='Greeter-box'>
-            {/* Texto de boas-vindas */}
-            <p>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolore aliquam dolorum
-                ipsum ratione? Voluptatibus corrupti ullam
-                facilis veniam perferendis enim, rerum, ipsa
-                expedita velit commodi eum? Doloremque eaque
-                autem natus!</p>
+            <div className='Greeter-container'>
+                <div>
+                    <h2 className='Greeter-title'>
+                        Bem-vindos ao NeedHelp!
+                    </h2>
+                    <h3 className='Greeter-text'>
+                        Aqui é o lugar onde você vai achar tutoriais muito (in)úteis para todas as suas necessidades!
+                    </h3>
+                </div>
+                <img src={lightbulbImage} className='Lightbulb-Image' alt='Orange-yellow lightbulb' />
+            </div>
         </Box>
     );
 };

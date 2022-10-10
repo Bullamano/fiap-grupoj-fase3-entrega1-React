@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #282c34;
+    background-color: #252525;
     min-height: 10vh;
     width: 100vw;
     display: flex;
@@ -12,19 +12,21 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    z-index: 100;
 }
 
 /* Container para conteúdos do header */
 .Header-content {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 /* Texto de título do site */
 .Header-title {
     font-size: 2em;
     font-weight: bold;
-    color: #345995;
+    color: #80a7e6;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;

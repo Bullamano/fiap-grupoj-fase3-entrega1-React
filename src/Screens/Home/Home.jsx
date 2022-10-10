@@ -4,8 +4,6 @@ import GreeterArea from '../../Components/GreeterArea/GreeterArea';
 import CardArray from '../../ExampleTutorials/CardArray';
 import './Home.css';
 
-//TODO adicionar mais características para a tela (navbar, logo, footer, etc.)
-
 /**
  * Home screen da aplicação.
  * @returns JSX da Home screen.
